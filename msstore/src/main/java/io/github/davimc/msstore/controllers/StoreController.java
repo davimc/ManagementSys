@@ -22,7 +22,7 @@ public class StoreController {
         return "Ok";
     }
 
-    @GetMapping(path = "id")
+    @GetMapping(path = "{id}")
     public ResponseEntity<StoreDTO> find(@PathVariable Long id) {
         StoreDTO dto = service.find(id);
 
