@@ -2,6 +2,7 @@ package io.github.davimc.msEmployee.units.service;
 
 
 import io.github.davimc.msEmployee.dto.EmployeeDTO;
+import io.github.davimc.msEmployee.dto.EmployeeNewDTO;
 import io.github.davimc.msEmployee.entities.Employee;
 import io.github.davimc.msEmployee.repository.EmployeeRepository;
 import io.github.davimc.msEmployee.services.EmployeeService;
@@ -33,7 +34,7 @@ public class EmployeeServiceTest {
     private UUID existentId;
     private UUID nonExistentId;
     private UUID dependentId;
-    private Employee obj;
+    private Employee objWithoutId, objWithId;
     private PageRequest page;
 
     @BeforeEach
@@ -41,13 +42,15 @@ public class EmployeeServiceTest {
         existentId = UUID.fromString("458e8557-014f-4806-8f45-258d487569db");
         nonExistentId = UUID.fromString("b6fed7ab-db41-42fb-8bc8-9e7057a23e5d");
         dependentId = UUID.fromString("4944d7b2-1317-11ee-be56-0242ac120002");
-        obj = Factory.createEmployee();
+        objWithoutId = Factory.createEmployee();
+        objWithId = objWithoutId;
+        objWithId.setId(existentId);
         page = PageRequest.of(0,10);
 
-        Mockito.when(repository.findById(existentId)).thenReturn(Optional.of(obj));
+        Mockito.when(repository.findById(existentId)).thenReturn(Optional.of(objWithoutId));
         Mockito.when(repository.findById(nonExistentId)).thenThrow(ObjectNotFoundException.class);
-        Mockito.when(repository.findAll(PageRequest.of(0, 10))).thenReturn(new PageImpl(List.of(obj)));
-        //Mockito.when(repository.save(newObj)).(() -> {});
+        Mockito.when(repository.findAll(PageRequest.of(0, 10))).thenReturn(new PageImpl(List.of(objWithoutId)));
+        Mockito.when(repository.save(Mockito.any(Employee.class))).thenReturn(objWithId);
 
     }
     @Test
@@ -71,13 +74,13 @@ public class EmployeeServiceTest {
             Assertions.assertEquals(1,dto.getTotalElements());
         });
     }
-    /*@Test
+    @Test
     public void insertShouldCreateAndReturnDTOWhenNewEmployeeDTOIsValid() {
         Assertions.assertDoesNotThrow(() -> {
-            EmployeeNewDTO newDTO = new EmployeeNewDTO(Factory.createEmployee());
+            EmployeeNewDTO newDTO = new EmployeeNewDTO(objWithoutId);
             EmployeeDTO dto = service.insert(newDTO);
 
-            Assertions.assertEquals(total + 1, dto.getId());
+            Assertions.assertEquals(dto.getId(), existentId);
         });
-    }*/
+    }
 }
