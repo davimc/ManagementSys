@@ -16,7 +16,7 @@ public class EmployeeDTO {
     private LocalDate birthdate;
     private LocalDate admissionDate;
     private LocalDate resignationDate;
-    private Double Salary;
+    private Double salary;
 
     public EmployeeDTO() {
     }
@@ -30,7 +30,7 @@ public class EmployeeDTO {
         this.birthdate = birthdate;
         this.admissionDate = admissionDate;
         this.resignationDate = resignationDate;
-        Salary = salary;
+        salary = salary;
     }
     public EmployeeDTO(Employee obj) {
         this.id = obj.getId();
@@ -41,7 +41,7 @@ public class EmployeeDTO {
         this.birthdate = obj.getBirthdate();
         this.admissionDate = obj.getAdmissionDate();
         this.resignationDate = obj.getResignationDate();
-        Salary = obj.getSalary();
+        salary = obj.getSalary();
     }
 
     public UUID getId() {
@@ -77,7 +77,7 @@ public class EmployeeDTO {
     }
 
     public Double getSalary() {
-        return Salary;
+        return salary;
     }
 
     @Override

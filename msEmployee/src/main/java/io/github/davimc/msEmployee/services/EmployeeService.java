@@ -1,6 +1,7 @@
 package io.github.davimc.msEmployee.services;
 
 import io.github.davimc.msEmployee.dto.EmployeeDTO;
+import io.github.davimc.msEmployee.dto.EmployeeNewDTO;
 import io.github.davimc.msEmployee.entities.Employee;
 import io.github.davimc.msEmployee.repository.EmployeeRepository;
 import io.github.davimc.msExceptionHandler.exceptions.ObjectNotFoundException;
@@ -33,5 +34,12 @@ public class EmployeeService {
         Page<Employee> obj = repository.findAll(pageable);
 
         return obj.map(EmployeeDTO::new);
+    }
+
+    public EmployeeDTO insert(EmployeeNewDTO dto) {
+        Employee obj = dto.fromDTO();
+        obj = repository.save(obj);
+
+        return new EmployeeDTO(obj);
     }
 }

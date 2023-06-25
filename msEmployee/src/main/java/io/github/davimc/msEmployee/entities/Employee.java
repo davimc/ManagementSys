@@ -16,6 +16,8 @@ public class Employee implements Serializable {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     private String name;
+
+    @Column(unique = true)
     private String cpf;
 
     private String email;
@@ -23,7 +25,7 @@ public class Employee implements Serializable {
     private LocalDate birthdate;
     private LocalDate admissionDate;
     private LocalDate resignationDate;
-    private Double Salary;
+    private Double salary;
 
     public Employee() {
     }
@@ -35,7 +37,7 @@ public class Employee implements Serializable {
         this.pix = pix;
         this.birthdate = birthdate;
         this.admissionDate = admissionDate;
-        Salary = salary;
+        this.salary = salary;
     }
 
     public UUID getId() {
@@ -103,11 +105,11 @@ public class Employee implements Serializable {
     }
 
     public Double getSalary() {
-        return Salary;
+        return salary;
     }
 
     public void setSalary(Double salary) {
-        Salary = salary;
+        this.salary = salary;
     }
 
     @Override
