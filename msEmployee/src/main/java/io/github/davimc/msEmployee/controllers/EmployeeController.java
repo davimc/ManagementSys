@@ -2,6 +2,7 @@ package io.github.davimc.msEmployee.controllers;
 
 import io.github.davimc.msEmployee.dto.EmployeeDTO;
 import io.github.davimc.msEmployee.dto.EmployeeNewDTO;
+import io.github.davimc.msEmployee.dto.EmployeeUpdateDTO;
 import io.github.davimc.msEmployee.services.EmployeeService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,5 +43,12 @@ public class EmployeeController {
                 .buildAndExpand(dto.getId()).toUri();
 
         return ResponseEntity.created(uri).body(dto);
+    }
+
+    @PutMapping(path = "/{id}")
+    public ResponseEntity<EmployeeDTO> update (@PathVariable UUID id, @RequestBody @Valid EmployeeUpdateDTO updateDTO) {
+        EmployeeDTO dto = service.update(id, updateDTO);
+
+        return ResponseEntity.accepted().body(dto);
     }
 }
