@@ -17,13 +17,13 @@
     <packaging>pom</packaging>
     <modules>
         <module>eurekaserver</module>
+        <module>msstore</module>
+        <module>msEmployee</module>
+        <module>msExceptionHandler</module>
+        <module>msgateway</module>
     </modules>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
