@@ -4,32 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fad2ff8-09fb-4080-bc3e-42a31a098d1f" name="Changes" comment="test: insert test">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msEmployee/mvnw.cmd" afterDir="false" />
+    <list default="true" id="7fad2ff8-09fb-4080-bc3e-42a31a098d1f" name="Changes" comment="updating">
       <change afterPath="$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/config/YAMLConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msExceptionHandler/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msExceptionHandler/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msExceptionHandler/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msExceptionHandler/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msExceptionHandler/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msExceptionHandler/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/msExceptionHandler/src/main/java/io/github/davimc/msExceptionHandler/MsExceptionHandlerApplication.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/msExceptionHandler/src/main/java/io/github/davimc/msExceptionHandler/controller/ResourceExceptionHandler.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/msExceptionHandler/src/main/java/io/github/davimc/msExceptionHandler/controller/responses/StandardError.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/msExceptionHandler/src/main/java/io/github/davimc/msExceptionHandler/exceptions/SimpleGlobalException.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/msExceptionHandler/src/main/resources/application.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/msExceptionHandler/src/test/java/io/github/davimc/msExceptionHandler/MsResourceExceptionHandlerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msEmployee/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msEmployee/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msstore/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msstore/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msstore/src/main/java/io/github/davimc/msstore/services/StoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msstore/src/main/java/io/github/davimc/msstore/services/StoreService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msstore/src/main/java/io/github/davimc/msstore/services/ex/ObjectNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/msExceptionHandler/src/main/java/io/github/davimc/msExceptionHandler/exceptions/ObjectNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msstore/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/msstore/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,13 +356,31 @@
       <option name="project" value="LOCAL" />
       <updated>1687718175877</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="fix: Inserting spring starter web">
+      <created>1687977551306</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1687977551306</updated>
+    </task>
+    <task id="LOCAL-00029" summary="get: FindAll">
+      <created>1687977589284</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1687977589284</updated>
+    </task>
+    <task id="LOCAL-00030" summary="updating">
+      <created>1687977656205</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1687977656205</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit" />
-    <MESSAGE value="fix" />
-    <MESSAGE value="Eureka server" />
     <MESSAGE value="Create ms store" />
     <MESSAGE value="clean" />
     <MESSAGE value="renamed" />
@@ -400,7 +403,10 @@
     <MESSAGE value="post: insert" />
     <MESSAGE value="put: Update Employee" />
     <MESSAGE value="test: insert test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: insert test" />
+    <MESSAGE value="fix: Inserting spring starter web" />
+    <MESSAGE value="get: FindAll" />
+    <MESSAGE value="updating" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
