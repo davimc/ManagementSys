@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/eurekaserver/pom.xml" />
         <option value="$PROJECT_DIR$/msstore/pom.xml" />
+        <option value="$PROJECT_DIR$/msEmployee/pom.xml" />
+        <option value="$PROJECT_DIR$/msgateway/pom.xml" />
       </list>
     </option>
   </component>
