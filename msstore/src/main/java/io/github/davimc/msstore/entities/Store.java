@@ -14,12 +14,15 @@ public class Store {
     private Long id;
     private String name;
 
+    private String cnpj;
+
     public Store() {
     }
 
-    public Store(Long id, String name) {
+    public Store(Long id, String name, String cnpj) {
         this.id = id;
         this.name = name;
+        this.cnpj = cnpj;
     }
 
     public Long getId() {
@@ -32,6 +35,14 @@ public class Store {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
     }
 
     @Override

@@ -2,6 +2,7 @@ package io.github.davimc.msstore.services;
 
 import io.github.davimc.msExceptionHandler.exceptions.ObjectNotFoundException;
 import io.github.davimc.msstore.dto.StoreDTO;
+import io.github.davimc.msstore.dto.StoreNewDTO;
 import io.github.davimc.msstore.entities.Store;
 import io.github.davimc.msstore.repositories.StoreRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,9 +29,9 @@ public class StoreService {
     }
 
     @Transactional
-    public StoreDTO insert(StoreDTO dto) {
+    public StoreDTO insert(StoreNewDTO dto) {
         Store obj = new Store();
-        obj.setName(dto.getName());
+        obj = dto.fromDTO();
         obj = repository.save(obj);
 
         return new StoreDTO(obj);

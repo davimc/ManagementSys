@@ -6,16 +6,20 @@ public class StoreDTO {
     private Long id;
     private String name;
 
+    private String cnpj;
+
     public StoreDTO() {
     }
 
-    public StoreDTO(Long id, String name) {
+    public StoreDTO(Long id, String name, String cnpj) {
         this.id = id;
         this.name = name;
+        this.cnpj = cnpj;
     }
     public StoreDTO(Store obj) {
         id = obj.getId();
         name = obj.getName();
+        cnpj = obj.getCnpj();
     }
 
     public Long getId() {
@@ -24,5 +28,9 @@ public class StoreDTO {
 
     public String getName() {
         return name;
+    }
+
+    public String getCnpj() {
+        return cnpj;
     }
 }

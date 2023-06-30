@@ -1,8 +1,9 @@
 package io.github.davimc.msstore.service;
 
+import io.github.davimc.msExceptionHandler.exceptions.ObjectNotFoundException;
 import io.github.davimc.msstore.dto.StoreDTO;
+import io.github.davimc.msstore.dto.StoreNewDTO;
 import io.github.davimc.msstore.services.StoreService;
-import io.github.davimc.msstore.services.ex.ObjectNotFoundException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,6 +22,7 @@ public class StoreServiceUT {
     private Long nonExistId;
     private Long totalElements;
     private String storeName = "First Store";
+    private String storeCnpj = "98035900000179";
 
     @BeforeEach
     private void setup() {
@@ -45,11 +47,12 @@ public class StoreServiceUT {
     @Test
     public void insertShouldReturnStoreDTO() {
         Assertions.assertDoesNotThrow(() -> {
-            StoreDTO dto = new StoreDTO(null, storeName);
+            StoreNewDTO dtoNew = new StoreNewDTO(storeName, storeCnpj);
 
-            dto = service.insert(dto);
+            StoreDTO dto = service.insert(dtoNew);
             Assertions.assertEquals(totalElements+1, dto.getId());
             Assertions.assertEquals(storeName, dto.getName());
+            Assertions.assertEquals(storeCnpj, dto.getCnpj());
         });
     }
 }
