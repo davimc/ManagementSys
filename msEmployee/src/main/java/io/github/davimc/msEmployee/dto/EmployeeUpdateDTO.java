@@ -25,6 +25,8 @@ public class EmployeeUpdateDTO {
     private LocalDate admissionDate;
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate resignationDate;
+    @NotBlank(message = "Role cannot be blank")
+    private String role;
 
     @PositiveOrZero(message = "Salary must be positive")
     private Double salary;
@@ -32,7 +34,7 @@ public class EmployeeUpdateDTO {
     public EmployeeUpdateDTO() {
     }
 
-    public EmployeeUpdateDTO(String name, String cpf, String email, String pix, LocalDate birthdate, LocalDate admissionDate, LocalDate resignationDate, Double salary) {
+    public EmployeeUpdateDTO(String name, String cpf, String email, String pix, LocalDate birthdate, LocalDate admissionDate, LocalDate resignationDate, Double salary, String role) {
         this.name = name;
         this.cpf = cpf;
         this.email = email;
@@ -41,6 +43,7 @@ public class EmployeeUpdateDTO {
         this.admissionDate = admissionDate;
         this.resignationDate = resignationDate;
         this.salary = salary;
+        this.role = role;
     }
 
     public EmployeeUpdateDTO(Employee obj) {
@@ -52,6 +55,7 @@ public class EmployeeUpdateDTO {
         this.admissionDate = obj.getAdmissionDate();
         resignationDate = obj.getResignationDate();
         salary = obj.getSalary();
+        role = obj.getRole();
     }
 
     public String getName() {
@@ -82,6 +86,14 @@ public class EmployeeUpdateDTO {
         return salary;
     }
 
+    public LocalDate getResignationDate() {
+        return resignationDate;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
     public Employee fromDTO(Employee obj) {
         obj.setCpf(cpf == null? obj.getCpf():cpf);
         obj.setBirthdate(birthdate == null? obj.getBirthdate():birthdate);
@@ -91,6 +103,7 @@ public class EmployeeUpdateDTO {
         obj.setAdmissionDate(admissionDate == null? obj.getAdmissionDate() : admissionDate);
         obj.setResignationDate(resignationDate == null? obj.getResignationDate() : resignationDate);
         obj.setSalary(salary == null? obj.getSalary() : salary);
+        obj.setRole(role == null?obj.getRole() : role);
 
         return obj;
     }

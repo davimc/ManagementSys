@@ -10,18 +10,18 @@ public class EmployeeDTO {
     private UUID id;
     private String name;
     private String cpf;
-
     private String email;
     private String pix;
     private LocalDate birthdate;
     private LocalDate admissionDate;
     private LocalDate resignationDate;
     private Double salary;
+    private String role;
 
     public EmployeeDTO() {
     }
 
-    public EmployeeDTO(UUID id, String name, String cpf, String email, String pix, LocalDate birthdate, LocalDate admissionDate, LocalDate resignationDate, Double salary) {
+    public EmployeeDTO(UUID id, String name, String cpf, String email, String pix, LocalDate birthdate, LocalDate admissionDate, LocalDate resignationDate, Double salary, String role) {
         this.id = id;
         this.name = name;
         this.cpf = cpf;
@@ -30,7 +30,8 @@ public class EmployeeDTO {
         this.birthdate = birthdate;
         this.admissionDate = admissionDate;
         this.resignationDate = resignationDate;
-        salary = salary;
+        this.salary = salary;
+        this.role = role;
     }
     public EmployeeDTO(Employee obj) {
         this.id = obj.getId();
@@ -42,6 +43,7 @@ public class EmployeeDTO {
         this.admissionDate = obj.getAdmissionDate();
         this.resignationDate = obj.getResignationDate();
         salary = obj.getSalary();
+        role = obj.getRole();
     }
 
     public UUID getId() {
@@ -78,6 +80,10 @@ public class EmployeeDTO {
 
     public Double getSalary() {
         return salary;
+    }
+
+    public String getRole() {
+        return role;
     }
 
     @Override

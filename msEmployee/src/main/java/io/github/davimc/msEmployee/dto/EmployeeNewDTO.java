@@ -32,11 +32,13 @@ public class EmployeeNewDTO {
     @NotNull(message = "Salary is necessary")
     @PositiveOrZero(message = "Salary must be positive")
     private Double salary;
+    @NotNull(message = "Role is necessary")
+    private String role;
 
     public EmployeeNewDTO() {
     }
 
-    public EmployeeNewDTO(String name, String cpf, String email, String pix, LocalDate birthdate, LocalDate admissionDate, LocalDate resignationDate, Double salary) {
+    public EmployeeNewDTO(String name, String cpf, String email, String pix, LocalDate birthdate, LocalDate admissionDate, LocalDate resignationDate, Double salary, String role) {
         this.name = name;
         this.cpf = cpf;
         this.email = email;
@@ -44,6 +46,7 @@ public class EmployeeNewDTO {
         this.birthdate = birthdate;
         this.admissionDate = admissionDate;
         this.salary = salary;
+        this.role = role;
     }
     public EmployeeNewDTO(Employee obj) {
         this.name = obj.getName();
@@ -53,6 +56,7 @@ public class EmployeeNewDTO {
         this.birthdate = obj.getBirthdate();
         this.admissionDate = obj.getAdmissionDate();
         salary = obj.getSalary();
+        role = obj.getRole();
     }
 
     public String getName() {
@@ -83,6 +87,10 @@ public class EmployeeNewDTO {
         return salary;
     }
 
+    public String getRole() {
+        return role;
+    }
+
     public Employee fromDTO() {
         Employee obj = new Employee();
         obj.setCpf(cpf);
@@ -92,6 +100,7 @@ public class EmployeeNewDTO {
         obj.setPix(pix);
         obj.setAdmissionDate(admissionDate);
         obj.setSalary(salary);
+        obj.setRole(role);
 
         return obj;
     }
