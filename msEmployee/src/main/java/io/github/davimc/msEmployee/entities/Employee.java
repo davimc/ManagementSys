@@ -26,11 +26,12 @@ public class Employee implements Serializable {
     private LocalDate admissionDate;
     private LocalDate resignationDate;
     private Double salary;
+    private String role;
 
     public Employee() {
     }
 
-    public Employee(String name, String cpf, String email, String pix, LocalDate birthdate, LocalDate admissionDate, Double salary) {
+    public Employee(String name, String cpf, String email, String pix, LocalDate birthdate, LocalDate admissionDate, Double salary, String role) {
         this.name = name;
         this.cpf = cpf;
         this.email = email;
@@ -38,6 +39,7 @@ public class Employee implements Serializable {
         this.birthdate = birthdate;
         this.admissionDate = admissionDate;
         this.salary = salary;
+        this.role = role;
     }
 
     public UUID getId() {
@@ -110,6 +112,14 @@ public class Employee implements Serializable {
 
     public void setSalary(Double salary) {
         this.salary = salary;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 
     @Override
