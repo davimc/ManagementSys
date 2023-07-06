@@ -7,22 +7,30 @@ Logo torna-se a escolha mais lógica a arquitetura de microserviços
 
 - [ ] Serviço para tratamento de exceções
 - [x] Serviço de lojas
-- [ ] Serviço de funcionários 
-  - [ ] controle
-    - [ ] com entidade para guardar informações
+  - [x] controle
   - [ ] registro
+- [x] Serviço de funcionários 
+  - [ ] controle
+  - [x] registro
+    - fazer integração com lojas
 - [ ] Serviço licença de funcionários
   - [ ] controle
-    - [ ] busca disponibilidade do funcionário
+    - [ ] busca disponibilidade do funcionário 
+      - > funcionário só está disponível caso não esteja com algum tipo de licença
   - [ ] registro
 - [ ] Serviço de trocas de funcionários
   - [ ] controle
   - [ ] registro
-    - rabbitmq
+    - [ ] rabbitmq
 - [ ] Serviço de pedido de trocas
   - [ ] controle
   - [ ] registro
-    - rabbitmq
+    - [ ] rabbitmq
+- [x] Balanceamento de carga
+- [ ] Docker
+- [ ] Banco de dados compartilhado
+  - [ ] UUID
+
 
 ## Estado
 **Em produção**
