@@ -3,6 +3,7 @@ package io.github.davimc.msEmployee.entities;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -10,22 +11,22 @@ import java.util.Objects;
 public class StoreEmployee implements Serializable {
     private final static long serialVersionUID = 1L;
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String storeName;
-
-    @ManyToOne
-    @JoinColumn(name = "employee_id")
-    private Employee employee;
     private String name;
+    @Column(unique = true)
+    private String cnpj;
+    @OneToMany
+    @JoinColumn(name = "store_id")
+    private List<Employee> employee;
 
     public StoreEmployee() {
     }
 
-    public StoreEmployee(Long id, String storeName, Employee employee, String name) {
+    public StoreEmployee(Long id, String name, String cnpj) {
         this.id = id;
-        this.storeName = storeName;
-        this.employee = employee;
         this.name = name;
+        this.cnpj = cnpj;
     }
 
     public Long getId() {
@@ -36,28 +37,28 @@ public class StoreEmployee implements Serializable {
         this.id = id;
     }
 
-    public String getStoreName() {
-        return storeName;
-    }
-
-    public void setStoreName(String storeName) {
-        this.storeName = storeName;
-    }
-
-    public Employee getEmployee() {
-        return employee;
-    }
-
-    public void setEmployee(Employee employee) {
-        this.employee = employee;
-    }
-
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public List<Employee> getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(List<Employee> employee) {
+        this.employee = employee;
+    }
+
+    public String getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
     }
 
     @Override
