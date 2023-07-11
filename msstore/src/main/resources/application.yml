@@ -1,6 +1,26 @@
 spring:
   application:
     name: msstore
+  config:
+    activate:
+      on-profile: dev
+    name: dev-YAML
+    environment: development
+    enabled: true
+    servers:
+      - www.abc.com
+      - www.xyz.com
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+    name: test-YAML
+    environment: test
+    enabled: true
+    servers:
+      - www.abc.com
+      - www.xyz.com
 
 server:
   port: 0
