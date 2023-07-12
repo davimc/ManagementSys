@@ -28,18 +28,25 @@ public class Employee implements Serializable {
     private Double salary;
     private String role;
 
+    @ManyToOne
+    @JoinColumn(name = "store_id")
+    private StoreEmployee store;
+
     public Employee() {
     }
 
-    public Employee(String name, String cpf, String email, String pix, LocalDate birthdate, LocalDate admissionDate, Double salary, String role) {
+    public Employee(UUID id, String name, String cpf, String email, String pix, LocalDate birthdate, LocalDate admissionDate, LocalDate resignationDate, Double salary, String role, StoreEmployee store) {
+        this.id = id;
         this.name = name;
         this.cpf = cpf;
         this.email = email;
         this.pix = pix;
         this.birthdate = birthdate;
         this.admissionDate = admissionDate;
+        this.resignationDate = resignationDate;
         this.salary = salary;
         this.role = role;
+        this.store = store;
     }
 
     public UUID getId() {
@@ -120,6 +127,14 @@ public class Employee implements Serializable {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    public StoreEmployee getStore() {
+        return store;
+    }
+
+    public void setStore(StoreEmployee store) {
+        this.store = store;
     }
 
     @Override
