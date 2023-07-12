@@ -16,8 +16,7 @@ public class StoreEmployee implements Serializable {
     private String name;
     @Column(unique = true)
     private String cnpj;
-    @OneToMany
-    @JoinColumn(name = "store_id")
+    @OneToMany(mappedBy = "store")
     private List<Employee> employee;
 
     public StoreEmployee() {
