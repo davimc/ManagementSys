@@ -19,7 +19,7 @@
         <module>eurekaserver</module>
         <module>msstore</module>
         <module>msEmployee</module>
-        <module>msexchange</module>
+        <module>msemplocontrol</module>
         <module>msExceptionHandler</module>
         <module>msgateway</module>
     </modules>

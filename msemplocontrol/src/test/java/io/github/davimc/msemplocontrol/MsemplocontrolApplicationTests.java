@@ -1,10 +1,10 @@
-package io.github.davimc.msexchange;
+package io.github.davimc.msemplocontrol;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MsexchangeApplicationTests {
+class MsemplocontrolApplicationTests {
 
 	@Test
 	void contextLoads() {
