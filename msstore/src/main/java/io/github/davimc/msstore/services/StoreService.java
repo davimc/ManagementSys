@@ -35,4 +35,10 @@ public class StoreService {
 
         return new StoreDTO(obj);
     }
+
+    public StoreDTO findByCnpj(String cnpj) {
+        Store obj = repository.findByCnpj(cnpj).orElseThrow(() -> new ObjectNotFoundException(cnpj, Store.class));
+
+        return new StoreDTO(obj);
+    }
 }
