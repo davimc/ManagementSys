@@ -24,14 +24,13 @@ public class StoreService {
     }
     @Transactional(readOnly = true)
     public StoreDTO find(Long id) {
-        Store obj = repository.findById(id).orElseThrow(() -> new ObjectNotFoundException(id, Store.class));
+        Store obj = repository.findById(id).orElseThrow(() -> new ObjectNotFoundException(id.toString(), Store.class));
         return new StoreDTO(obj);
     }
 
     @Transactional
     public StoreDTO insert(StoreNewDTO dto) {
-        Store obj = new Store();
-        obj = dto.fromDTO();
+        Store obj = dto.fromDTO();
         obj = repository.save(obj);
 
         return new StoreDTO(obj);
