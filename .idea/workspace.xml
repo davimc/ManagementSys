@@ -4,17 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fad2ff8-09fb-4080-bc3e-42a31a098d1f" name="Changes" comment="updating">
-      <change afterPath="$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/config/YAMLConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msExceptionHandler/src/main/java/io/github/davimc/msExceptionHandler/MsExceptionHandlerApplication.java" afterDir="false" />
+    <list default="true" id="7fad2ff8-09fb-4080-bc3e-42a31a098d1f" name="Changes" comment="Pausing development for now">
       <change afterPath="$PROJECT_DIR$/msExceptionHandler/src/main/java/io/github/davimc/msExceptionHandler/controller/ResourceExceptionHandler.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/msExceptionHandler/src/main/java/io/github/davimc/msExceptionHandler/controller/responses/StandardError.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/msExceptionHandler/src/main/java/io/github/davimc/msExceptionHandler/exceptions/SimpleGlobalException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msExceptionHandler/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msExceptionHandler/src/test/java/io/github/davimc/msExceptionHandler/MsResourceExceptionHandlerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msemplocontrol/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msemplocontrol/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msemplocontrol/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msemplocontrol/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msemplocontrol/src/main/java/io/github/davimc/msemplocontrol/MsemplocontrolApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msemplocontrol/src/main/java/io/github/davimc/msemplocontrol/domain/DataEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msemplocontrol/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msgateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msgateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msgateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msgateway/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msstore/src/main/java/io/github/davimc/msstore/services/ex/ObjectNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/msExceptionHandler/src/main/java/io/github/davimc/msExceptionHandler/exceptions/ObjectNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/controllers/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/controllers/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/repository/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/services/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/services/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/tests/factory/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/tests/factory/Factory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/units/service/EmployeeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/units/service/EmployeeServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msexchange/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msemplocontrol/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msexchange/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msexchange/src/test/java/io/github/davimc/msexchange/MsexchangeApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/msemplocontrol/src/test/java/io/github/davimc/msemplocontrol/MsemplocontrolApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msgateway/src/main/java/io/github/davimc/msgateway/MsgatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/msgateway/src/main/java/io/github/davimc/msgateway/MsgatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +41,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="com.haulmont.jpb.JpaEntity" />
         <option value="Class" />
       </list>
     </option>
@@ -73,7 +91,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Davi M Carvalho/IdeaProjects/ManagementSys/msEmployee/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Davi M Carvalho/IdeaProjects/ManagementSys/msexchange/src/main/resources&quot;,
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -89,14 +107,20 @@
       <recent name="io.github.davimc.msstore.services" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Davi M Carvalho\IdeaProjects\ManagementSys\msexchange\src\main\resources" />
+      <recent name="C:\Users\Davi M Carvalho\IdeaProjects\ManagementSys\msstore\src\main\java\io\github\davimc\msstore" />
+      <recent name="C:\Users\Davi M Carvalho\IdeaProjects\ManagementSys\msstore\src\main\resources" />
       <recent name="C:\Users\Davi M Carvalho\IdeaProjects\ManagementSys\msEmployee\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="io.github.davimc.msEmployee.dto" />
-      <recent name="io.github.davimc.msExceptionHandler.exceptions" />
+      <recent name="io.github.davimc.msexchange.domain" />
+      <recent name="io.github.davimc.msexchange.repositories" />
+      <recent name="io.github.davimc.msEmployee.services" />
+      <recent name="io.github.davimc.msEmployee.repository" />
+      <recent name="io.github.davimc.msstore.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MsstoreApplication">
+  <component name="RunManager" selected="Application.MsemplocontrolApplication">
     <configuration name="EurekaserverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.github.davimc.eurekaserver.EurekaserverApplication" />
       <module name="eurekaserver" />
@@ -111,9 +135,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MsgatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.github.davimc.msgateway.MsgatewayApplication" />
-      <module name="msgateway" />
+    <configuration name="MsemplocontrolApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.davimc.msemplocontrol.MsemplocontrolApplication" />
+      <module name="msemplocontrol" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsexchangeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.davimc.msexchange.MsexchangeApplication" />
+      <module name="msexchange" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,16 +152,6 @@
     <configuration name="MsstoreApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.github.davimc.msstore.MsstoreApplication" />
       <module name="msstore" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeServiceTest.insertShouldCreateAndReturnDTOWhenNewEmployeeDTOIsValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="msEmployee" />
-      <option name="PACKAGE_NAME" value="io.github.davimc.msEmployee.units.service" />
-      <option name="MAIN_CLASS_NAME" value="io.github.davimc.msEmployee.units.service.EmployeeServiceTest" />
-      <option name="METHOD_NAME" value="insertShouldCreateAndReturnDTOWhenNewEmployeeDTOIsValid" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MsstoreApplication" />
-        <item itemvalue="Application.MsgatewayApplication" />
-        <item itemvalue="Application.MsEmployeeApplication" />
+        <item itemvalue="Application.MsemplocontrolApplication" />
         <item itemvalue="Application.EurekaserverApplication" />
-        <item itemvalue="JUnit.EmployeeServiceTest.insertShouldCreateAndReturnDTOWhenNewEmployeeDTOIsValid" />
+        <item itemvalue="Application.MsEmployeeApplication" />
+        <item itemvalue="Application.MsexchangeApplication" />
+        <item itemvalue="Application.MsstoreApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -166,83 +187,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685842749433</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Initial commit">
-      <created>1685845497113</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1685845497113</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Eureka server">
-      <created>1685845582880</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1685845582880</updated>
-    </task>
-    <task id="LOCAL-00003" summary="fix">
-      <created>1685845644022</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1685845644022</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Eureka server">
-      <created>1685846781130</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1685846781130</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Create ms store">
-      <created>1685846917419</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1685846917420</updated>
-    </task>
-    <task id="LOCAL-00006" summary="clean">
-      <created>1685846924732</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1685846924732</updated>
-    </task>
-    <task id="LOCAL-00007" summary="renamed">
-      <created>1685847125384</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1685847125384</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Configuring eureka server">
-      <created>1685847515643</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1685847515643</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Modeling store">
-      <created>1685913722089</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1685913722089</updated>
-    </task>
-    <task id="LOCAL-00010" summary="exception: ObjectNotFound">
-      <created>1685913746314</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1685913746314</updated>
-    </task>
-    <task id="LOCAL-00011" summary="seed">
-      <created>1685913753577</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1685913753577</updated>
     </task>
     <task id="LOCAL-00012" summary="plugin">
       <created>1685913767421</created>
@@ -377,36 +321,246 @@
       <option name="project" value="LOCAL" />
       <updated>1687977656205</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="updating">
+      <created>1687981548061</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1687981548061</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Configuring Gateway">
+      <created>1687981611328</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1687981611328</updated>
+    </task>
+    <task id="LOCAL-00033" summary="update: Store CNPJ">
+      <created>1688164120624</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1688164120624</updated>
+    </task>
+    <task id="LOCAL-00034" summary="update: Employee role">
+      <created>1688325721672</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1688325721672</updated>
+    </task>
+    <task id="LOCAL-00035" summary="update: Employee role">
+      <created>1688326457105</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1688326457105</updated>
+    </task>
+    <task id="LOCAL-00036" summary="H2 configuration">
+      <created>1688479935392</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1688479935392</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Standardizing exceptions">
+      <created>1688481552835</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1688481552835</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Standardizing exceptions">
+      <created>1688481567489</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1688481567489</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Standardizing exceptions">
+      <created>1688481579309</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1688481579309</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Updating Readme">
+      <created>1688605839979</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1688605839979</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Separating profiles">
+      <created>1688912607018</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1688912607018</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Separating profiles">
+      <created>1688912658879</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1688912658879</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Store Employee">
+      <created>1688912681275</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1688912681275</updated>
+    </task>
+    <task id="LOCAL-00044" summary="update: cnpj unique">
+      <created>1688912718988</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1688912718988</updated>
+    </task>
+    <task id="LOCAL-00045" summary="update: ddl-auto:create">
+      <created>1689044998519</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1689044998519</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Profile active dev">
+      <created>1689081188000</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1689081188000</updated>
+    </task>
+    <task id="LOCAL-00047" summary="msgateway configuration">
+      <created>1689168156553</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1689168156553</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Exchange entity, repository, service, dto">
+      <created>1689168217825</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1689168217825</updated>
+    </task>
+    <task id="LOCAL-00049" summary="update: storeId">
+      <created>1689168248464</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1689168248464</updated>
+    </task>
+    <task id="LOCAL-00050" summary="msexchange">
+      <created>1689168268816</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1689168268817</updated>
+    </task>
+    <task id="LOCAL-00051" summary="msgateway">
+      <created>1689168278190</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1689168278190</updated>
+    </task>
+    <task id="LOCAL-00052" summary="msgateway">
+      <created>1689168287516</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1689168287516</updated>
+    </task>
+    <task id="LOCAL-00053" summary="msexchange">
+      <created>1689168316959</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1689168316959</updated>
+    </task>
+    <task id="LOCAL-00054" summary="update: storeId">
+      <created>1689168327661</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1689168327661</updated>
+    </task>
+    <task id="LOCAL-00055" summary="MSexchange">
+      <created>1689302983924</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1689302983924</updated>
+    </task>
+    <task id="LOCAL-00056" summary="MSgateway">
+      <created>1689302992882</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1689302992882</updated>
+    </task>
+    <task id="LOCAL-00057" summary="fix">
+      <created>1689304334038</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1689304334038</updated>
+    </task>
+    <task id="LOCAL-00058" summary="fix">
+      <created>1689340007609</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1689340007610</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Identifier">
+      <created>1689340040860</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1689340040860</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Pausing development for now">
+      <created>1689340981102</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1689340981102</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create ms store" />
-    <MESSAGE value="clean" />
-    <MESSAGE value="renamed" />
-    <MESSAGE value="Configuring eureka server" />
-    <MESSAGE value="Modeling store" />
-    <MESSAGE value="exception: ObjectNotFound" />
-    <MESSAGE value="plugin" />
-    <MESSAGE value="Modeling Store" />
-    <MESSAGE value="Service Test" />
-    <MESSAGE value="updating: validation" />
-    <MESSAGE value="update" />
-    <MESSAGE value="fix: id" />
-    <MESSAGE value="Create readme" />
-    <MESSAGE value="Create ms Employee" />
-    <MESSAGE value="Configuring eureka client" />
-    <MESSAGE value="test: get -&gt; findbyid" />
-    <MESSAGE value="Employee (domain, dto, repository, service)" />
-    <MESSAGE value="test: find, findAll" />
-    <MESSAGE value="seed" />
-    <MESSAGE value="post: insert" />
-    <MESSAGE value="put: Update Employee" />
     <MESSAGE value="test: insert test" />
     <MESSAGE value="fix: Inserting spring starter web" />
     <MESSAGE value="get: FindAll" />
     <MESSAGE value="updating" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating" />
+    <MESSAGE value="Configuring Gateway" />
+    <MESSAGE value="update: Store CNPJ" />
+    <MESSAGE value="update: Employee role" />
+    <MESSAGE value="H2 configuration" />
+    <MESSAGE value="Standardizing exceptions" />
+    <MESSAGE value="Updating Readme" />
+    <MESSAGE value="Separating profiles" />
+    <MESSAGE value="Store Employee" />
+    <MESSAGE value="update: cnpj unique" />
+    <MESSAGE value="update: ddl-auto:create" />
+    <MESSAGE value="Profile active dev" />
+    <MESSAGE value="msgateway configuration" />
+    <MESSAGE value="Exchange entity, repository, service, dto" />
+    <MESSAGE value="msgateway" />
+    <MESSAGE value="msexchange" />
+    <MESSAGE value="update: storeId" />
+    <MESSAGE value="MSexchange" />
+    <MESSAGE value="MSgateway" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="Identifier" />
+    <MESSAGE value="Pausing development for now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pausing development for now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
