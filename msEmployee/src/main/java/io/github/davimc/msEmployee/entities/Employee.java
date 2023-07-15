@@ -2,6 +2,7 @@ package io.github.davimc.msEmployee.entities;
 
 import jakarta.persistence.*;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
@@ -10,6 +11,7 @@ import java.util.UUID;
 @Entity
 @Table(name = "tb_employee")
 public class Employee implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -28,15 +30,12 @@ public class Employee implements Serializable {
     private Double salary;
     private String role;
 
-    @ManyToOne
-    @JoinColumn(name = "store_id")
-    private StoreEmployee store;
+
 
     public Employee() {
     }
 
-    public Employee(UUID id, String name, String cpf, String email, String pix, LocalDate birthdate, LocalDate admissionDate, LocalDate resignationDate, Double salary, String role, StoreEmployee store) {
-        this.id = id;
+    public Employee(String name, String cpf, String email, String pix, LocalDate birthdate, LocalDate admissionDate, LocalDate resignationDate, Double salary, String role) {
         this.name = name;
         this.cpf = cpf;
         this.email = email;
@@ -46,7 +45,6 @@ public class Employee implements Serializable {
         this.resignationDate = resignationDate;
         this.salary = salary;
         this.role = role;
-        this.store = store;
     }
 
     public UUID getId() {
@@ -129,13 +127,6 @@ public class Employee implements Serializable {
         this.role = role;
     }
 
-    public StoreEmployee getStore() {
-        return store;
-    }
-
-    public void setStore(StoreEmployee store) {
-        this.store = store;
-    }
 
     @Override
     public boolean equals(Object o) {

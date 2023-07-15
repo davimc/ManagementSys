@@ -56,14 +56,14 @@ public class EmployeeServiceTest {
     @Test
     public void findShouldReturnAnDTOWhenIdExists() {
         Assertions.assertDoesNotThrow(() -> {
-            EmployeeDTO dto = service.find(existentId);
+            EmployeeDTO dto = service.findByIdDTO(existentId);
 
             Assertions.assertEquals(dto.getName(), "Luci");
         });
     }
     @Test
     public void findShouldThrowObjectNotFoundWhenIdDoesntExists() {
-        Assertions.assertThrows(ObjectNotFoundException.class, () -> service.find(nonExistentId));
+        Assertions.assertThrows(ObjectNotFoundException.class, () -> service.findByIdDTO(nonExistentId));
     }
     @Test
     public void findAllShouldReturnPageOfObjects() {
