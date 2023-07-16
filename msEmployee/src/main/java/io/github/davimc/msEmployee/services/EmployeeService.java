@@ -22,12 +22,18 @@ public class EmployeeService {
 
     @Transactional(readOnly = true)
     protected Employee findById(UUID id) {
-        return repository.findById(id).orElseThrow(() -> new ObjectNotFoundException(id, Employee.class));
+        return repository.findById(id).orElseThrow(() -> new ObjectNotFoundException(id.toString(), Employee.class));
     }
 
-    @Transactional
-    public EmployeeDTO find(UUID id) {
+    @Transactional(readOnly = true)
+    public EmployeeDTO findByIdDTO(UUID id) {
         return new EmployeeDTO(findById(id));
+    }
+
+    @Transactional(readOnly = true)
+    public EmployeeDTO findByCpf(String cpf) {
+        Employee obj = repository.findByCpf(cpf).orElseThrow(() -> new ObjectNotFoundException(cpf, Employee.class));
+        return new EmployeeDTO(obj);
     }
 
     @Transactional(readOnly = true)
@@ -37,6 +43,7 @@ public class EmployeeService {
         return obj.map(EmployeeDTO::new);
     }
 
+    @Transactional
     public EmployeeDTO insert(EmployeeNewDTO dto) {
         Employee obj = dto.fromDTO();
         obj = repository.save(obj);
@@ -44,6 +51,7 @@ public class EmployeeService {
         return new EmployeeDTO(obj);
     }
 
+    @Transactional
     public EmployeeDTO update(UUID id, EmployeeUpdateDTO updateDTO) {
         Employee obj = findById(id);
         obj = updateDTO.fromDTO(obj);

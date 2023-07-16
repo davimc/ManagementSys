@@ -32,7 +32,12 @@ public class EmployeeController {
     }
     @GetMapping(path = "/{id}")
     public ResponseEntity<EmployeeDTO> find(@PathVariable UUID id) {
-        return ResponseEntity.ok().body(service.find(id));
+        return ResponseEntity.ok().body(service.findByIdDTO(id));
+    }
+
+    @GetMapping(params = "cpf")
+    public ResponseEntity<EmployeeDTO> findByCpf(@RequestParam String cpf) {
+        return ResponseEntity.ok().body(service.findByCpf(cpf));
     }
 
     @PostMapping
