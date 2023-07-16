@@ -21,7 +21,7 @@ spring:
     servers:
       - www.abc.com
       - www.xyz.com
-
+---
 server:
   port: 0
 eureka:
