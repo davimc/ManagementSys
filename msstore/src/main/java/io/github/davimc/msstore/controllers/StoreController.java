@@ -32,7 +32,7 @@ public class StoreController {
         return ResponseEntity.ok().body(dto);
     }
 
-    @GetMapping(params = "cpf")
+    @GetMapping(params = "cnpj")
     public ResponseEntity<StoreDTO> findByCnpj(@RequestParam String cnpj) {
         return ResponseEntity.ok().body(service.findByCnpj(cnpj));
     }
