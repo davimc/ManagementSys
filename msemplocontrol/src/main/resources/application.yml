@@ -1,6 +1,11 @@
 spring:
   application:
     name: msemplocontrol
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 server:
   port: 0
 eureka:
@@ -11,7 +16,9 @@ eureka:
       default-zone: http://localhost:8761/eureka
     instance:
       instance-id: ${spring.application.name}:${spring-cloud.application.instance_id:${random.value}}
-
+mq:
+  queues:
+    employee-queue: "employee-queue"
 management:
   endpoints:
     web:
