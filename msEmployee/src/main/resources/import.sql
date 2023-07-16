@@ -1,1 +1,1 @@
-INSERT INTO tb_employee(id,name, cpf, email, pix, birthdate, admission_date, salary,store_id) VALUES ('699e20fe-1e5c-11ee-be56-0242ac120002', 'Huguinho', '12345678901','huguinho@gmail.com','12345678901', '1999-08-19', '2003-12-31', 3800.00,1)
+INSERT INTO tb_employee(id,name, cpf, email, pix, birthdate, admission_date, salary) VALUES ('699e20fe-1e5c-11ee-be56-0242ac120002', 'Huguinho', '12345678901','huguinho@gmail.com','12345678901', '1999-08-19', '2003-12-31', 3800.00)
