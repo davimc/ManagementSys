@@ -1,35 +1,32 @@
 package io.github.davimc.msemplocontrol.controllers;
 
-import io.github.davimc.msemplocontrol.infra.client.EmployeeResource;
-import io.github.davimc.msemplocontrol.infra.client.StoreResource;
-import io.github.davimc.msemplocontrol.model.DataEmployee;
-import io.github.davimc.msemplocontrol.model.DataStore;
+import io.github.davimc.msemplocontrol.infra.mqueue.EmployeePublisher;
+import io.github.davimc.msemplocontrol.model.HiringProtocol;
+import io.github.davimc.msemplocontrol.model.HiringRequest;
+import io.github.davimc.msemplocontrol.services.EmploControlService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+
+import java.net.URI;
 
 @RestController
 @RequestMapping("emplo-control")
 @RequiredArgsConstructor
 public class EmploControlController {
-    private final EmployeeResource employeeResource;
-    private final StoreResource storeResource;
+    private final EmploControlService service;
     @GetMapping
     public String status() {
         return "Ok";
     }
 
-    @GetMapping(params = "cpf")
-    public ResponseEntity<DataEmployee> findEmployee(@RequestParam String cpf) {
-        return (employeeResource.findByCpf(cpf));
+    @PostMapping(value = "/hiring")
+    public ResponseEntity<HiringProtocol> hiring(@Valid @RequestBody HiringRequest data) {
+        HiringProtocol protocol = service.hiring(data);
+        URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
+                .buildAndExpand().toUri();
+        return ResponseEntity.created(uri).body(protocol);
     }
-    @GetMapping(params = "cnpj")
-    public ResponseEntity<DataStore> findStore(@RequestParam String cnpj) {
-        return (storeResource.findByCnpj(cnpj));
-    }
-
-
 }
