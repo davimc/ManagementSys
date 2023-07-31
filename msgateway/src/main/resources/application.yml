@@ -7,13 +7,20 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          #issuer-uri: http://cursoms-keycloak:8081/realms/MSManagerSysRealm
+          issuer-uri: http://localhost:8081/realms/MSManagerSysRealm
+
 server:
   port: 8080
 
 eureka:
   client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      #default-zone:http://curso-eureka-user:curso-eureka-pass@localhost:8761/eureka
-      default-zone: http://localhost:8761/eureka
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka-user:eureka-pass@localhost:8761/eureka
+      #defaultZone: http://localhost:8761/eureka
