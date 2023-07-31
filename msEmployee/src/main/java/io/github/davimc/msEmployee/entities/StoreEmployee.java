@@ -13,7 +13,6 @@ public class StoreEmployee implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
     @Column(unique = true)
     private String cnpj;
     @OneToMany
@@ -23,9 +22,8 @@ public class StoreEmployee implements Serializable {
     public StoreEmployee() {
     }
 
-    public StoreEmployee(Long id, String name, String cnpj) {
+    public StoreEmployee(Long id, String cnpj) {
         this.id = id;
-        this.name = name;
         this.cnpj = cnpj;
     }
 
@@ -37,13 +35,6 @@ public class StoreEmployee implements Serializable {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public List<Employee> getEmployee() {
         return employee;

@@ -22,7 +22,7 @@ public class StoreEmployeeDTO implements Serializable {
     }
     public StoreEmployeeDTO(StoreEmployee obj) {
         id = obj.getId();
-        this.cnpj = obj.getName();
+        this.cnpj = obj.getCnpj();
 //        this.name = obj.getName();
     }
 

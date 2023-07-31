@@ -14,10 +14,6 @@ public class EmployeeUpdateDTO {
 
     @CPF(message = "CPF format are not being obeyed")
     private String cpf;
-
-    @Email(message = "E-mail format are not being obeyed")
-    private String email;
-    private String pix;
     @Past(message = "Birthdate must be in the past")
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate birthdate;
@@ -37,25 +33,11 @@ public class EmployeeUpdateDTO {
     public EmployeeUpdateDTO(String name, String cpf, String email, String pix, LocalDate birthdate, LocalDate admissionDate, LocalDate resignationDate, Double salary, String role) {
         this.name = name;
         this.cpf = cpf;
-        this.email = email;
-        this.pix = pix;
         this.birthdate = birthdate;
         this.admissionDate = admissionDate;
         this.resignationDate = resignationDate;
         this.salary = salary;
         this.role = role;
-    }
-
-    public EmployeeUpdateDTO(Employee obj) {
-        this.name = obj.getName();
-        this.cpf = obj.getCpf();
-        this.email = obj.getEmail();
-        this.pix = obj.getPix();
-        this.birthdate = obj.getBirthdate();
-        this.admissionDate = obj.getAdmissionDate();
-        resignationDate = obj.getResignationDate();
-        salary = obj.getSalary();
-        role = obj.getRole();
     }
 
     public String getName() {
@@ -64,14 +46,6 @@ public class EmployeeUpdateDTO {
 
     public String getCpf() {
         return cpf;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getPix() {
-        return pix;
     }
 
     public LocalDate getBirthdate() {
@@ -98,8 +72,6 @@ public class EmployeeUpdateDTO {
         obj.setCpf(cpf == null? obj.getCpf():cpf);
         obj.setBirthdate(birthdate == null? obj.getBirthdate():birthdate);
         obj.setName(name == null? obj.getName() : name);
-        obj.setEmail(email == null? obj.getEmail() : email);
-        obj.setPix(pix == null? obj.getPix() : pix);
         obj.setAdmissionDate(admissionDate == null? obj.getAdmissionDate() : admissionDate);
         obj.setResignationDate(resignationDate == null? obj.getResignationDate() : resignationDate);
         obj.setSalary(salary == null? obj.getSalary() : salary);

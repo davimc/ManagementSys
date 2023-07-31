@@ -22,8 +22,6 @@ public class Employee implements Serializable {
     @Column(unique = true)
     private String cpf;
 
-    private String email;
-    private String pix;
     private LocalDate birthdate;
     private LocalDate admissionDate;
     private LocalDate resignationDate;
@@ -35,11 +33,9 @@ public class Employee implements Serializable {
     public Employee() {
     }
 
-    public Employee(String name, String cpf, String email, String pix, LocalDate birthdate, LocalDate admissionDate, LocalDate resignationDate, Double salary, String role) {
+    public Employee(String name, String cpf, LocalDate birthdate, LocalDate admissionDate, LocalDate resignationDate, Double salary, String role) {
         this.name = name;
         this.cpf = cpf;
-        this.email = email;
-        this.pix = pix;
         this.birthdate = birthdate;
         this.admissionDate = admissionDate;
         this.resignationDate = resignationDate;
@@ -69,22 +65,6 @@ public class Employee implements Serializable {
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPix() {
-        return pix;
-    }
-
-    public void setPix(String pix) {
-        this.pix = pix;
     }
 
     public LocalDate getBirthdate() {

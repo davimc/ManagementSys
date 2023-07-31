@@ -10,24 +10,19 @@ public class EmployeeDTO {
     private UUID id;
     private String name;
     private String cpf;
-    private String email;
-    private String pix;
     private LocalDate birthdate;
     private LocalDate admissionDate;
     private LocalDate resignationDate;
     private Double salary;
     private String role;
-    private Long storeId;
 
     public EmployeeDTO() {
     }
 
-    public EmployeeDTO(UUID id, String name, String cpf, String email, String pix, LocalDate birthdate, LocalDate admissionDate, LocalDate resignationDate, Double salary, String role) {
+    public EmployeeDTO(UUID id, String name, String cpf, LocalDate birthdate, LocalDate admissionDate, LocalDate resignationDate, Double salary, String role) {
         this.id = id;
         this.name = name;
         this.cpf = cpf;
-        this.email = email;
-        this.pix = pix;
         this.birthdate = birthdate;
         this.admissionDate = admissionDate;
         this.resignationDate = resignationDate;
@@ -38,8 +33,6 @@ public class EmployeeDTO {
         this.id = obj.getId();
         this.name = obj.getName();
         this.cpf = obj.getCpf();
-        this.email = obj.getEmail();
-        this.pix = obj.getPix();
         this.birthdate = obj.getBirthdate();
         this.admissionDate = obj.getAdmissionDate();
         this.resignationDate = obj.getResignationDate();
@@ -59,14 +52,6 @@ public class EmployeeDTO {
         return cpf;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public String getPix() {
-        return pix;
-    }
-
     public LocalDate getBirthdate() {
         return birthdate;
     }
@@ -83,9 +68,6 @@ public class EmployeeDTO {
         return salary;
     }
 
-    public Long getStoreId() {
-        return storeId;
-    }
 
     public String getRole() {
         return role;

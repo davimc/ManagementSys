@@ -1,62 +1,50 @@
-package io.github.davimc.msEmployee.dto;
+package io.github.davimc.msEmployee.entities.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.github.davimc.msEmployee.entities.Employee;
-import jakarta.validation.constraints.*;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Past;
+import jakarta.validation.constraints.PositiveOrZero;
 import org.hibernate.validator.constraints.br.CPF;
 
 import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.Date;
 
-public class EmployeeNewDTO {
+public class HiringRequest {
 
     @NotNull(message = "Name is necessary")
     private String name;
-
     @NotNull(message = "CPF is necessary")
     @CPF(message = "CPF format are not being obeyed")
     private String cpf;
-
-    @NotNull(message = "E-mail is necessary")
-    @Email(message = "E-mail format are not being obeyed")
-    private String email;
-    private String pix;
-
     @NotNull(message = "Birthdate is necessary")
     @Past(message = "Birthdate must be in the past")
     @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate birthdate;
-    @NotNull(message = "Admission date is necessary")
+    private Date birthdate;
     @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate admissionDate;
-
+    private Date admissionDate;
     @NotNull(message = "Salary is necessary")
     @PositiveOrZero(message = "Salary must be positive")
     private Double salary;
     @NotNull(message = "Role is necessary")
     private String role;
 
-    public EmployeeNewDTO() {
+    private Long storeId;
+    private String storeCnpj;
+
+    public HiringRequest() {
     }
 
-    public EmployeeNewDTO(String name, String cpf, String email, String pix, LocalDate birthdate, LocalDate admissionDate, LocalDate resignationDate, Double salary, String role) {
+    public HiringRequest(String name, String cpf, Date birthdate, Date admissionDate, Double salary, String role, Long storeId, String storeCnpj) {
         this.name = name;
         this.cpf = cpf;
-        this.email = email;
-        this.pix = pix;
         this.birthdate = birthdate;
         this.admissionDate = admissionDate;
         this.salary = salary;
         this.role = role;
-    }
-    public EmployeeNewDTO(Employee obj) {
-        this.name = obj.getName();
-        this.cpf = obj.getCpf();
-        this.email = obj.getEmail();
-        this.pix = obj.getPix();
-        this.birthdate = obj.getBirthdate();
-        this.admissionDate = obj.getAdmissionDate();
-        salary = obj.getSalary();
-        role = obj.getRole();
+        this.storeId = storeId;
+        this.storeCnpj = storeCnpj;
     }
 
     public String getName() {
@@ -67,19 +55,11 @@ public class EmployeeNewDTO {
         return cpf;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public String getPix() {
-        return pix;
-    }
-
-    public LocalDate getBirthdate() {
+    public Date getBirthdate() {
         return birthdate;
     }
 
-    public LocalDate getAdmissionDate() {
+    public Date getAdmissionDate() {
         return admissionDate;
     }
 
@@ -91,15 +71,21 @@ public class EmployeeNewDTO {
         return role;
     }
 
+    public Long getStoreId() {
+        return storeId;
+    }
+
+    public String getStoreCnpj() {
+        return storeCnpj;
+    }
+
     public Employee fromDTO() {
         Employee obj = new Employee();
         obj.setCpf(cpf);
-        obj.setBirthdate(birthdate);
+        obj.setBirthdate(birthdate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate());
         obj.setName(name);
-        obj.setEmail(email);
-        obj.setPix(pix);
-        obj.setAdmissionDate(admissionDate);
         obj.setSalary(salary);
+        obj.setAdmissionDate(admissionDate != null? admissionDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate() : LocalDate.now());
         obj.setRole(role);
 
         return obj;

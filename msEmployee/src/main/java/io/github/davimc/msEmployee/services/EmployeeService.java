@@ -1,7 +1,7 @@
 package io.github.davimc.msEmployee.services;
 
 import io.github.davimc.msEmployee.dto.EmployeeDTO;
-import io.github.davimc.msEmployee.dto.EmployeeNewDTO;
+import io.github.davimc.msEmployee.entities.model.HiringRequest;
 import io.github.davimc.msEmployee.dto.EmployeeUpdateDTO;
 import io.github.davimc.msEmployee.entities.Employee;
 import io.github.davimc.msEmployee.repository.EmployeeRepository;
@@ -44,11 +44,11 @@ public class EmployeeService {
     }
 
     @Transactional
-    public EmployeeDTO insert(EmployeeNewDTO dto) {
+    public Employee insert(HiringRequest dto) {
         Employee obj = dto.fromDTO();
         obj = repository.save(obj);
 
-        return new EmployeeDTO(obj);
+        return (obj);
     }
 
     @Transactional
