@@ -4,34 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fad2ff8-09fb-4080-bc3e-42a31a098d1f" name="Changes" comment="Pausing development for now">
-      <change afterPath="$PROJECT_DIR$/msExceptionHandler/src/main/java/io/github/davimc/msExceptionHandler/controller/ResourceExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msExceptionHandler/src/main/java/io/github/davimc/msExceptionHandler/controller/responses/StandardError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msExceptionHandler/src/main/java/io/github/davimc/msExceptionHandler/exceptions/SimpleGlobalException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msemplocontrol/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msemplocontrol/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msemplocontrol/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msemplocontrol/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msemplocontrol/src/main/java/io/github/davimc/msemplocontrol/MsemplocontrolApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msemplocontrol/src/main/java/io/github/davimc/msemplocontrol/domain/DataEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msemplocontrol/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msgateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msgateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msgateway/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msgateway/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+     <list default="true" id="7fad2ff8-09fb-4080-bc3e-42a31a098d1f" name="Changes" comment="Keycloack">
+      <change afterPath="$PROJECT_DIR$/eurekaserver/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/src/main/java/io/github/davimc/eurekaserver/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msemplocontrol/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/controllers/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/controllers/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/repository/EmployeeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/services/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/services/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/tests/factory/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/tests/factory/Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/units/service/EmployeeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/units/service/EmployeeServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msexchange/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msemplocontrol/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msexchange/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/msexchange/src/test/java/io/github/davimc/msexchange/MsexchangeApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/msemplocontrol/src/test/java/io/github/davimc/msemplocontrol/MsemplocontrolApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msgateway/src/main/java/io/github/davimc/msgateway/MsgatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/msgateway/src/main/java/io/github/davimc/msgateway/MsgatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msExceptionHandler/src/main/java/io/github/davimc/msExceptionHandler/controller/ResourceExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/msExceptionHandler/src/main/java/io/github/davimc/msExceptionHandler/controller/ResourceExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msemplocontrol/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/msemplocontrol/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msgateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/msgateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msstore/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/msstore/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +76,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Davi M Carvalho/IdeaProjects/ManagementSys/msexchange/src/main/resources&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
@@ -100,11 +84,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="io.github.davimc.msemplocontrol.services" />
       <recent name="io.github.davimc.msEmployee.entities.Employee" />
       <recent name="io.github.davimc.msExceptionHandler.controller" />
       <recent name="io.github.davimc.msstore.dto" />
       <recent name="io.github.davimc.msstore.repositories" />
-      <recent name="io.github.davimc.msstore.services" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Davi M Carvalho\IdeaProjects\ManagementSys\msexchange\src\main\resources" />
@@ -113,14 +97,14 @@
       <recent name="C:\Users\Davi M Carvalho\IdeaProjects\ManagementSys\msEmployee\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.github.davimc.msExceptionHandler.controller.responses" />
+      <recent name="io.github.davimc.msemplocontrol.model" />
+      <recent name="io.github.davimc.msemplocontrol.infra.client" />
       <recent name="io.github.davimc.msexchange.domain" />
       <recent name="io.github.davimc.msexchange.repositories" />
-      <recent name="io.github.davimc.msEmployee.services" />
-      <recent name="io.github.davimc.msEmployee.repository" />
-      <recent name="io.github.davimc.msstore.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MsemplocontrolApplication">
+  <component name="RunManager" selected="Application.MsgatewayApplication">
     <configuration name="EurekaserverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.github.davimc.eurekaserver.EurekaserverApplication" />
       <module name="eurekaserver" />
@@ -142,9 +126,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MsexchangeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.github.davimc.msexchange.MsexchangeApplication" />
-      <module name="msexchange" />
+    <configuration name="MsgatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.davimc.msgateway.MsgatewayApplication" />
+      <module name="msgateway" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MsemplocontrolApplication" />
-        <item itemvalue="Application.EurekaserverApplication" />
-        <item itemvalue="Application.MsEmployeeApplication" />
-        <item itemvalue="Application.MsexchangeApplication" />
+        <item itemvalue="Application.MsgatewayApplication" />
         <item itemvalue="Application.MsstoreApplication" />
+        <item itemvalue="Application.EurekaserverApplication" />
+        <item itemvalue="Application.MsemplocontrolApplication" />
+        <item itemvalue="Application.MsEmployeeApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -187,174 +171,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685842749433</updated>
-    </task>
-    <task id="LOCAL-00012" summary="plugin">
-      <created>1685913767421</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1685913767421</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Modeling Store">
-      <created>1685913778528</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1685913778528</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Service Test">
-      <created>1685913790995</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1685913790995</updated>
-    </task>
-    <task id="LOCAL-00015" summary="updating: validation">
-      <created>1685913807165</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1685913807165</updated>
-    </task>
-    <task id="LOCAL-00016" summary="update">
-      <created>1685913816856</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1685913816856</updated>
-    </task>
-    <task id="LOCAL-00017" summary="fix: id">
-      <created>1685914258436</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1685914258436</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Create readme">
-      <created>1686620346764</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1686620346764</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Create ms Employee">
-      <created>1686925215484</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1686925215484</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Configuring eureka client">
-      <created>1686927577398</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1686927577398</updated>
-    </task>
-    <task id="LOCAL-00021" summary="test: get -&gt; findbyid">
-      <created>1687146297068</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1687146297068</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Employee (domain, dto, repository, service)">
-      <created>1687672051132</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1687672051132</updated>
-    </task>
-    <task id="LOCAL-00023" summary="test: find, findAll">
-      <created>1687672111429</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1687672111429</updated>
-    </task>
-    <task id="LOCAL-00024" summary="seed">
-      <created>1687673235413</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1687673235413</updated>
-    </task>
-    <task id="LOCAL-00025" summary="post: insert">
-      <created>1687715177260</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1687715177260</updated>
-    </task>
-    <task id="LOCAL-00026" summary="put: Update Employee">
-      <created>1687716238494</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1687716238494</updated>
-    </task>
-    <task id="LOCAL-00027" summary="test: insert test">
-      <created>1687718175877</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1687718175877</updated>
-    </task>
-    <task id="LOCAL-00028" summary="fix: Inserting spring starter web">
-      <created>1687977551306</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1687977551306</updated>
-    </task>
-    <task id="LOCAL-00029" summary="get: FindAll">
-      <created>1687977589284</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1687977589284</updated>
-    </task>
-    <task id="LOCAL-00030" summary="updating">
-      <created>1687977656205</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1687977656205</updated>
-    </task>
-    <task id="LOCAL-00031" summary="updating">
-      <created>1687981548061</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1687981548061</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Configuring Gateway">
-      <created>1687981611328</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1687981611328</updated>
-    </task>
-    <task id="LOCAL-00033" summary="update: Store CNPJ">
-      <created>1688164120624</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1688164120624</updated>
-    </task>
-    <task id="LOCAL-00034" summary="update: Employee role">
-      <created>1688325721672</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1688325721672</updated>
-    </task>
-    <task id="LOCAL-00035" summary="update: Employee role">
-      <created>1688326457105</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1688326457105</updated>
     </task>
     <task id="LOCAL-00036" summary="H2 configuration">
       <created>1688479935392</created>
@@ -531,94 +347,277 @@
       <option name="project" value="LOCAL" />
       <updated>1689340981102</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Pausing devlopment for now">
+      <created>1689342835431</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1689342835431</updated>
+    </task>
+    <task id="LOCAL-00062" summary="meemplocontrol">
+      <created>1689342929629</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1689342929629</updated>
+    </task>
+    <task id="LOCAL-00063" summary="megateway">
+      <created>1689342962227</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1689342962227</updated>
+    </task>
+    <task id="LOCAL-00064" summary="update">
+      <created>1689342980035</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1689342980035</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Openfeign and Eureka">
+      <created>1689343726267</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1689343726267</updated>
+    </task>
+    <task id="LOCAL-00066" summary="update: Find by cnpj">
+      <created>1689343879815</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1689343879815</updated>
+    </task>
+    <task id="LOCAL-00067" summary="fix">
+      <created>1689343918952</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1689343918952</updated>
+    </task>
+    <task id="LOCAL-00068" summary="update">
+      <created>1689461577989</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1689461577989</updated>
+    </task>
+    <task id="LOCAL-00069" summary="update">
+      <created>1689513213801</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1689513213801</updated>
+    </task>
+    <task id="LOCAL-00070" summary="get: find by cpf">
+      <created>1689513289179</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1689513289179</updated>
+    </task>
+    <task id="LOCAL-00071" summary="fix: cnpj">
+      <created>1689513307373</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1689513307373</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Feign data employee">
+      <created>1689513350902</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1689513350902</updated>
+    </task>
+    <task id="LOCAL-00073" summary="update: emplo-control">
+      <created>1689513376387</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1689513376388</updated>
+    </task>
+    <task id="LOCAL-00074" summary="fix: port">
+      <created>1689513956202</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1689513956202</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Feign store data">
+      <created>1689514029567</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1689514029567</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Handling exceptions">
+      <created>1689518980361</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1689518980361</updated>
+    </task>
+    <task id="LOCAL-00077" summary="RabbitMQ config">
+      <created>1689538058511</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1689538058511</updated>
+    </task>
+    <task id="LOCAL-00078" summary="RabbitMQ config">
+      <created>1689538167804</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1689538167804</updated>
+    </task>
+    <task id="LOCAL-00079" summary="update">
+      <created>1689538186902</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1689538186902</updated>
+    </task>
+    <task id="LOCAL-00080" summary="RabbitMQ config">
+      <created>1689538204459</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1689538204459</updated>
+    </task>
+    <task id="LOCAL-00081" summary="RabbitMQ publisher">
+      <created>1689768705876</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1689768705877</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Receiving by RabbitMQ">
+      <created>1690802701057</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1690802701058</updated>
+    </task>
+    <task id="LOCAL-00083" summary="RabbitMQ subscriber">
+      <created>1690802747701</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1690802747701</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Keycloack">
+      <created>1690825952586</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1690825952587</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test: insert test" />
-    <MESSAGE value="fix: Inserting spring starter web" />
-    <MESSAGE value="get: FindAll" />
-    <MESSAGE value="updating" />
-    <MESSAGE value="Configuring Gateway" />
-    <MESSAGE value="update: Store CNPJ" />
-    <MESSAGE value="update: Employee role" />
-    <MESSAGE value="H2 configuration" />
-    <MESSAGE value="Standardizing exceptions" />
-    <MESSAGE value="Updating Readme" />
-    <MESSAGE value="Separating profiles" />
-    <MESSAGE value="Store Employee" />
-    <MESSAGE value="update: cnpj unique" />
-    <MESSAGE value="update: ddl-auto:create" />
-    <MESSAGE value="Profile active dev" />
-    <MESSAGE value="msgateway configuration" />
-    <MESSAGE value="Exchange entity, repository, service, dto" />
-    <MESSAGE value="msgateway" />
     <MESSAGE value="msexchange" />
     <MESSAGE value="update: storeId" />
     <MESSAGE value="MSexchange" />
     <MESSAGE value="MSgateway" />
-    <MESSAGE value="fix" />
     <MESSAGE value="Identifier" />
     <MESSAGE value="Pausing development for now" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pausing development for now" />
+    <MESSAGE value="Pausing devlopment for now" />
+    <MESSAGE value="meemplocontrol" />
+    <MESSAGE value="megateway" />
+    <MESSAGE value="Openfeign and Eureka" />
+    <MESSAGE value="update: Find by cnpj" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="get: find by cpf" />
+    <MESSAGE value="fix: cnpj" />
+    <MESSAGE value="Feign data employee" />
+    <MESSAGE value="update: emplo-control" />
+    <MESSAGE value="fix: port" />
+    <MESSAGE value="Feign store data" />
+    <MESSAGE value="Handling exceptions" />
+    <MESSAGE value="update" />
+    <MESSAGE value="RabbitMQ config" />
+    <MESSAGE value="Receiving by RabbitMQ" />
+    <MESSAGE value="RabbitMQ publisher" />
+    <MESSAGE value="RabbitMQ subscriber" />
+    <MESSAGE value="Keycloack" />
+    <option name="LAST_COMMIT_MESSAGE" value="Keycloack" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/units/service/EmployeeServiceTest.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/units/service/EmployeeServiceTest.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/units/service/EmployeeServiceTest.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/units/service/EmployeeServiceTest.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/units/service/EmployeeServiceTest.java</url>
-          <line>51</line>
+          <line>50</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/units/service/EmployeeServiceTest.java</url>
-          <line>79</line>
+          <line>80</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/units/service/EmployeeServiceTest.java</url>
-          <line>80</line>
+          <line>81</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/units/service/EmployeeServiceTest.java</url>
-          <line>82</line>
+          <line>83</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/units/service/EmployeeServiceTest.java</url>
-          <line>45</line>
+          <line>44</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/units/service/EmployeeServiceTest.java</url>
-          <line>46</line>
+          <line>45</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/msEmployee/src/test/java/io/github/davimc/msEmployee/units/service/EmployeeServiceTest.java</url>
-          <line>52</line>
+          <line>51</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/infra/queue/EmissaoCartaoSubscriber.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/infra/queue/EmissaoCartaoSubscriber.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/infra/queue/EmissaoCartaoSubscriber.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/services/EmployeeService.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/services/EmployeeService.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/entities/Employee.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msEmployee/src/main/java/io/github/davimc/msEmployee/entities/model/HiringRequest.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
