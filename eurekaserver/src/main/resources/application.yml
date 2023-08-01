@@ -1,12 +1,10 @@
 spring:
   application:
     name: eureka-server
-  #security:
-   # basic:
-    #  enabled: true
-    #user:
-      #name: curso-eureka-user
-      #password: curso-eureka-pass
+  security:
+    user:
+      name: eureka-user
+      password: eureka-pass
 
 server:
   port: 8761
@@ -15,3 +13,5 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+  instance:
+    hostname: localhost
