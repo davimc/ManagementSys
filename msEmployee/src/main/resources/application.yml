@@ -23,15 +23,6 @@ spring:
       - www.xyz.com
 ---
 spring:
-  jackson:
-    serialization:
-      WRITE_DATES_AS_TIMESTAMPS: false
-    default-property-inclusion:
-      - always
-      - non_null
-      - non_absent
-      - non_default
-      - non_empty
   rabbitmq:
     host: localhost
     port: 5672
@@ -48,6 +39,7 @@ eureka:
       defaultZone: http://eureka-user:eureka-pass@localhost:8761/eureka
   instance:
     hostname: localhost
+    instance-id: ${spring.application.name}:${spring-cloud.application.instance_id:${random.value}}
 
 mq:
   queues:
